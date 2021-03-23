@@ -61,6 +61,12 @@
   --active-btn-order: #188ce8;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* body */
 
 .body {
@@ -265,44 +271,33 @@ address {
   letter-spacing: 0.03em;
 }
 
-/* index */
-
 .body {
   background-color: var(--white-color);
 }
 
 /* header-box */
 
-.header {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .header-box {
   display: flex;
+  width: 1200px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  border: 3px dotted red;
 }
 
 .header-logo {
   display: flex;
   margin-right: 93px;
-  margin-left: 215px;
+  margin-left: auto;
 }
 
-/* 
-.header-nav li {
-  margin-right: 50px;
+.hero-box {
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-footer-color);
 }
-
- 
-.header-nav li:last-child {
-  margin-right: 0px;
-}
-*/
-
 .header-nav {
   display: flex;
   padding-left: 0px;
@@ -318,8 +313,8 @@ address {
 
 .header-link {
   display: flex;
-  margin-right: 215px;
-  margin-left: auto;
+  margin-right: auto;
+  margin-left: 331px;
   padding-left: 0px;
 }
 
@@ -330,27 +325,37 @@ address {
 /* hero */
 
 .main-hero {
-  margin-bottom: 30px;
   color: var(--white-color);
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .section-hero {
-  background-color: var(--background-footer-color);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-hero h1 {
+  text-align: center;
+  padding-top: 200px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .btn-order {
-  display: inline-block;
-  min-width: 430px;
-  padding: 10px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   margin-bottom: 200px;
+
   color: var(--white-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -358,6 +363,7 @@ address {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+
   background: var(--active-text-color);
   border-radius: 4px;
   border: 2px solid var(--active-text-color);
@@ -369,6 +375,10 @@ address {
 }
 
 /* features */
+
+.section-features ul {
+  display: flex;
+}
 
 .section-features,
 .section-activity {
