@@ -338,9 +338,9 @@ address {
 
 .header-box {
   display: flex;
-  align-items: center;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
 }
 
 .header-logo {
@@ -444,10 +444,15 @@ address {
 }
 
 .activity-box li + li {
-  margin-left: 30px;
+  padding-left: 30px;
 }
 
 /* team */
+
+.section-team {
+  display: block;
+  background-color: var(--background-button-color);
+}
 
 .section-team h2 {
   text-align: center;
@@ -463,10 +468,50 @@ address {
   display: flex;
   padding-left: 0px;
   padding-bottom: 94px;
-  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team-card li + li {
+  margin-left: 30px;
 }
 
 .team-card li {
   display: block;
-  border: 1px solid black;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* footer */
+
+.footer {
+  display: block;
+}
+
+.footer-logo {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-address {
+  display: flex;
+  padding-bottom: 9px;
+}
+
+.footer-link {
+  display: block;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-link li:first-child {
+  padding-bottom: 9px;
+}
+
+.footer-link li:last-child {
+  padding-bottom: 60px;
 }
