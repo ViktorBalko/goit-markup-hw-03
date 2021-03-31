@@ -261,6 +261,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .section-features p {
   color: var(--second-text-color);
@@ -374,6 +375,10 @@ address {
   margin-left: 50px;
 }
 
+.header-box {
+  border-bottom: 1px solid #ececec;
+}
+
 /* hero */
 
 .hero-box {
@@ -387,16 +392,25 @@ address {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
 }
 
 .btn-order {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 200px;
 }
+
+.main-hero {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+
+/* features */
+
 .features-box {
   display: flex;
   padding-left: 0px;
@@ -424,6 +438,20 @@ address {
 .section-activity {
   background-color: var(--white-color);
 }
+
+.section-features h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.section-features p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
+}
+
+/* activity */
 
 .section-activity h2 {
   text-align: center;
@@ -483,6 +511,19 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-card h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.team-card p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 /* footer */
@@ -582,4 +623,11 @@ address {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+}
+
+.section-hero button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
