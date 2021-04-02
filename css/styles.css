@@ -152,6 +152,8 @@ button:hover,
 button:focus {
   color: var(--white-color);
   background: var(--active-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* mosaic */
@@ -225,9 +227,11 @@ address {
   text-transform: uppercase;
 }
 
+/*  
 .section-hero {
   background-color: var(--background-footer-color);
 }
+*/
 
 .btn-order {
   color: var(--white-color);
@@ -245,6 +249,8 @@ address {
 .btn-order:hover,
 .btn-order:focus {
   background-color: var(--active-btn-order);
+  border-radius: 4px;
+  border: 2px solid var(--active-btn-order);
 }
 
 /* features */
@@ -321,7 +327,7 @@ address {
 
 /* Homework #3 */
 
-.body {
+.container {
   box-sizing: border-box;
   width: 1200px;
   padding-right: 15px;
@@ -343,6 +349,8 @@ address {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-logo {
@@ -375,10 +383,6 @@ address {
   margin-left: 50px;
 }
 
-.header-box {
-  border-bottom: 1px solid #ececec;
-}
-
 /* hero */
 
 .hero-box {
@@ -386,6 +390,9 @@ address {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-footer-color);
+  /*   background-image: url(../images/hero-img.png);
+  background-size: cover;
+  background-position-x: center; */
 }
 
 .section-hero {
@@ -481,6 +488,7 @@ address {
 .section-team {
   display: block;
   background-color: var(--background-button-color);
+  width: 100%;
 }
 
 .section-team h2 {
@@ -530,6 +538,7 @@ address {
 
 .footer {
   display: block;
+  width: 100%;
 }
 
 .footer-logo {
@@ -579,7 +588,7 @@ address {
 }
 
 .main-button li:nth-child(n + 2) {
-  padding-left: 9px;
+  padding-left: 8px;
 }
 
 /* mosaic */
@@ -602,20 +611,41 @@ address {
 }
 
 .mosaic-tile li:nth-last-child(-n + 3) {
-  padding-bottom: 94px;
+  margin-bottom: 94px;
+}
+
+.mosaic-tile li:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 
 .mosaic-tile h3 {
   padding-top: 20px;
   padding-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .mosaic-tile p {
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 20px;
+}
+
+.mosaic-text {
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.mosaic-tile img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .main-button button {
@@ -630,4 +660,9 @@ address {
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.footer-box {
+  width: 100%;
+  position: absolute;
 }
