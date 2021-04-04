@@ -186,8 +186,13 @@ a {
   text-decoration: none;
 }
 
-address {
+.footer-address {
+  font-family: Roboto;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .footer > address {
@@ -344,13 +349,16 @@ address {
 
 /* header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-box {
   display: flex;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-logo {
@@ -385,21 +393,21 @@ address {
 
 /* hero */
 
-.hero-box {
+.hero {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-footer-color);
-  /*   background-image: url(../images/hero-img.png);
+  background-image: url(../images/hero-img.png);
   background-size: cover;
-  background-position-x: center; */
+  background-position-x: center;
 }
 
-.section-hero {
+/* .hero-box {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .btn-order {
   display: block;
@@ -410,6 +418,9 @@ address {
 }
 
 .main-hero {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 200px;
@@ -462,7 +473,7 @@ address {
 
 .section-activity h2 {
   text-align: center;
-  padding-top: 94px;
+  padding-top: 0px;
   padding-bottom: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
