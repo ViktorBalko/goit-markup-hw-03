@@ -398,9 +398,9 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-footer-color);
-  background-image: url(../images/hero-img.png);
+  /*   background-image: url(../images/hero-img.png);
   background-size: cover;
-  background-position-x: center;
+  background-position-x: center; */
 }
 
 /* .hero-box {
